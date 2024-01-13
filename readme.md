@@ -12,13 +12,13 @@ The key purpose of this repo is to
 To use it. you need to modify a few files
 
 1. Cmakelist:
-download and configure each eigen, opencv and ceres accordingly and only build in local directory. do not use sudo make install to avoid conflict with other part of the OS. Then change the set path to each of the build directory to use the required version of each function.
+download and configure each eigen, opencv and ceres accordingly and only build in local directory. do not use sudo make install to avoid conflict with other parts of the OS. Then change the set path to each of the build directory to use the required version of each function.
 
 2. MCVIO_frontend.yaml:
 this code does contain absolute directories for some yaml. do change it accordingly
 
 3. MCVIO_estimator.yaml:
-this code does contain absolute directories for some yaml. do change it accordingly
+this code does contain absolute directories for some yaml. do change it accordingly (to be modified next time with just one bash file to install and modify. for now keep it as it is)
 
 Then go to Section 3 and run per normally
 
