@@ -12,6 +12,10 @@ To use it. you need to modify a few files
 2. MCVIO_frontend.yaml: this code does contain absolute directories for some yaml. do change it accordingly
 3. MCVIO_estimator.yaml: this code does contain absolute directories for some yaml. do change it accordingly
 
+Then go to Section 3 and run per normally
+
+Good luck
+
 # MCVIO: Multi-Camera Visual-Inertial Odometry
 
 ## Toward Robust Visual-Inertial Odometry with Multiple Nonoverlapping Monocular Cameras
