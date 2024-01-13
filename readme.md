@@ -2,7 +2,7 @@
 # Update 13 Jan 2024
 This repo is forked from https://github.com/shockwaveHe/MCVIO
 
-The original MCVIO is a better organized 360 repo when compared with other`s work like Xuhao`s vins fisheye
+The original MCVIO is a better organized 360 repo when compared with other works like Xuhao`s vins_fisheye
 
 The key purpose of this repo is to run the MCVIO without VPI and without changing system eigen, opencv and ceres
 
