@@ -1,3 +1,17 @@
+
+# Update 13 Jan 2024
+This repo is forked from https://github.com/shockwaveHe/MCVIO
+
+The original MCVIO is a better organized 360 repo when compared with other`s work like Xuhao`s vins fisheye
+
+The key purpose of this repo is to run the MCVIO without VPI and without changing system eigen, opencv and ceres
+
+To use it. you need to modify a few files
+
+1. Cmakelist: download and configure each eigen, opencv and ceres accordingly and only build in local directory. do not use sudo make install to avoid conflict with other part of the OS. Then change the set path to each of the build directory to use the required version of each function.
+2. MCVIO_frontend.yaml: this code does contain absolute directories for some yaml. do change it accordingly
+3. MCVIO_estimator.yaml: this code does contain absolute directories for some yaml. do change it accordingly
+
 # MCVIO: Multi-Camera Visual-Inertial Odometry
 
 ## Toward Robust Visual-Inertial Odometry with Multiple Nonoverlapping Monocular Cameras
@@ -46,6 +60,8 @@ Follow [Ceres Installation](http://ceres-solver.org/installation.html), remember
 (Our testing environment: Ubuntu 20.04, ROS Noetic, OpenCV 4.2, Eigen 3.3.3, Ceres 2.0.0, C++17) 
 
 1.3. **Vision Programming Interface (VPI)**
+(Optional)
+This repo removed most of the VPI part. so technically can be use without VPI easily.
 
 Follow [VPI installation](https://docs.nvidia.com/vpi/installation.html).
 (Our testing environment: VPI 1.0, it should work for VPI 2.0. If your are using version above 1.0, the configuration for VPI in CMakeLists should be adjusted. There are some bugs when using the VPI Pyramidal LK Optical Flow. Our codes already consider these bugs. If VPI resolve the bugs, remember to fix the code in vpi_feature_tracker.)
