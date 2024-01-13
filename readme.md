@@ -5,19 +5,20 @@ This repo is forked from https://github.com/shockwaveHe/MCVIO
 The original MCVIO is a better organized 360 repo when compared with other works like Xuhao`s vins_fisheye
 
 The key purpose of this repo is to 
-*run the MCVIO without VPI and
-*run without changing system eigen, opencv and ceres. 
-*deleted the internal eigen in thirdparty directory since the author didn`t even bother to include it in cmakelist.
-
-* Item 1
-* Item 2
-* Item 3
+* run the MCVIO without VPI
+* run without changing system eigen, opencv and ceres. 
+* deleted some unused directories and libraries.
 
 To use it. you need to modify a few files
 
-1. Cmakelist: download and configure each eigen, opencv and ceres accordingly and only build in local directory. do not use sudo make install to avoid conflict with other part of the OS. Then change the set path to each of the build directory to use the required version of each function.
-2. MCVIO_frontend.yaml: this code does contain absolute directories for some yaml. do change it accordingly
-3. MCVIO_estimator.yaml: this code does contain absolute directories for some yaml. do change it accordingly
+1. Cmakelist:
+download and configure each eigen, opencv and ceres accordingly and only build in local directory. do not use sudo make install to avoid conflict with other part of the OS. Then change the set path to each of the build directory to use the required version of each function.
+
+2. MCVIO_frontend.yaml:
+this code does contain absolute directories for some yaml. do change it accordingly
+
+3. MCVIO_estimator.yaml:
+this code does contain absolute directories for some yaml. do change it accordingly
 
 Then go to Section 3 and run per normally
 
