@@ -9,6 +9,10 @@ The key purpose of this repo is to
 *run without changing system eigen, opencv and ceres. 
 *deleted the internal eigen in thirdparty directory since the author didn`t even bother to include it in cmakelist.
 
+* Item 1
+* Item 2
+* Item 3
+
 To use it. you need to modify a few files
 
 1. Cmakelist: download and configure each eigen, opencv and ceres accordingly and only build in local directory. do not use sudo make install to avoid conflict with other part of the OS. Then change the set path to each of the build directory to use the required version of each function.
